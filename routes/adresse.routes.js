@@ -14,7 +14,7 @@ const router = express.Router();
 
 
 // routes
-router.get('/utilisateurs', auth, adresseController.findByAccount);
+router.get('/utilisateur', auth, adresseController.findByAccount);
 router.get('/list', adresseController.fetchAll);
 router.get('/detail/:id', adresseController.findById);
 router.post('/register', auth, adresseController.create);

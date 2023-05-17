@@ -48,25 +48,25 @@ app.use((req, res, next) => {
 });
 
 //association des routes aux racines URL
-app.use('/utilisateurs', utilisateurRoutes);
-app.use('/lignes', ligneRoutes);
+app.use('/users', utilisateurRoutes);
+app.use('/lines', ligneRoutes);
 app.use('/roles', roleRoutes);
-app.use('/adresses', adresseRoutes);
-app.use('/adressetypes', adresseTypeRoutes);
-app.use('/commandes', commandeRoutes);
-app.use('/livraisonstatuts', livraisonStatutRoutes);
-app.use('/livraisons', livraisonRoutes);
-app.use('/factures', factureRoutes);
-app.use('/facturestatuts', factureStatutRoutes);
-app.use('/commandestatuts', commandeStatutRoutes);
+app.use('/address', adresseRoutes);
+app.use('/addressTypes', adresseTypeRoutes);
+app.use('/oders', commandeRoutes);
+app.use('/shippingStatuts', livraisonStatutRoutes);
+app.use('/shipping', livraisonRoutes);
+app.use('/billings', factureRoutes);
+app.use('/factureStatuts', factureStatutRoutes);
+app.use('/orderStatus', commandeStatutRoutes);
 app.use('/products', articleRoutes);
 app.use('/tvas', tvaRoutes);
-app.use('/categories', categorieRoutes);
-app.use('/fournisseurs', fournisseurRoutes);
-app.use('/marques', marqueRoutes);
-app.use('/moyenpaiements', moyenPaiementRoutes);
+app.use('/category', categorieRoutes);
+app.use('/suppliers', fournisseurRoutes);
+app.use('/brand', marqueRoutes);
+app.use('/paymentMethods', moyenPaiementRoutes);
 app.use('/stocks', stockRoutes);
-app.use('/roles', roleRoutes);
+
 
 
 
