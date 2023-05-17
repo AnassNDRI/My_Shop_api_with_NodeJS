@@ -51,8 +51,8 @@ app.use((req, res, next) => {
 app.use('/utilisateurs', utilisateurRoutes);
 app.use('/lignes', ligneRoutes);
 app.use('/roles', roleRoutes);
-app.use('/adresses', adresseRoutes);
-app.use('/adressetypes', adresseTypeRoutes);
+app.use('/address', adresseRoutes);
+app.use('/addressTypes', adresseTypeRoutes);
 app.use('/commandes', commandeRoutes);
 app.use('/livraisonstatuts', livraisonStatutRoutes);
 app.use('/livraisons', livraisonRoutes);
@@ -64,7 +64,7 @@ app.use('/tvas', tvaRoutes);
 app.use('/categories', categorieRoutes);
 app.use('/fournisseurs', fournisseurRoutes);
 app.use('/marques', marqueRoutes);
-app.use('/moyenpaiements', moyenPaiementRoutes);
+app.use('/paymentMethods', moyenPaiementRoutes);
 app.use('/stocks', stockRoutes);
 app.use('/roles', roleRoutes);
 

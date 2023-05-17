@@ -26,7 +26,7 @@ router.put('/update/:id', auth,  utilisateurController.update);
 router.get('/list', utilisateurController.fetchAll);
 router.get('/account', auth,  utilisateurController.account);
 router.get('/detail/:id', auth,   utilisateurController.findById);
-router.delete('/delete/:id', auth, utilisateurController.delete);
+router.delete('/:id', auth, utilisateurController.delete);
 
 // exporter le router pour le rendre accessible
 module.exports = router;
